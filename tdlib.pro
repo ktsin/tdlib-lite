@@ -15,7 +15,8 @@ CONFIG += staticlib
 SOURCES += api.cpp
 
 HEADERS += api.h \
-    defaults.h
+    defaults.h \
+    TL_serialization_op_codes.h
 
 unix:!symbian {
     maemo5 {

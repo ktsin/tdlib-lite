@@ -1,6 +1,6 @@
 #ifndef API_H
 #define API_H
-
+#include <QtNetwork>
 
 class api {
 public:
@@ -12,6 +12,7 @@ private:
     char* serverIP;
     int serverPort;
     char* serverSecret;
+    QTcpSocket* server;
 
 };
 
