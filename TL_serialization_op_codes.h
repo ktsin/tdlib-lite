@@ -1,8 +1,7 @@
 #ifndef TL_SERIALIZATION_OP_CODES_H
 #define TL_SERIALIZATION_OP_CODES_H
 
-    #ifndef TL_MTPROTO_CRCs
-    #define TL_MTPROTO_CRCs
+    #ifdef TL_MTPROTO_CRCs
         //MTProto start
         #define resPQ 0x05162463
         #define p_q_inner_data 0x83c95aec
@@ -67,8 +66,7 @@
         //MTProto end
     #endif //TL_MTPROTO_CRCs
 
-    #ifndef TL_GENERICS
-    #define TL_GENERICS
+    #ifdef TL_GENERICS
         #define boolFalse 0xbc799737
         #define boolTrue 0x997275b5
         #define true 0x3fedd339
@@ -1272,8 +1270,7 @@
         #define stats_getMessageStats 0xb6e0a3f5
     #endif //TL_GENERICS
 
-    #ifndef TL_END_TO_END_ENCRYPTION
-    #define TL_END_TO_END_ENCRYPTION
+    #ifdef TL_END_TO_END_ENCRYPTION
         #define decryptedMessage 0x1f814f1f
         #define decryptedMessageService 0xaa48327d
         #define decryptedMessageMediaEmpty 0x89f5c4a
